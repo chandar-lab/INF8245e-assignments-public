@@ -1,1 +1,4 @@
-# -INF8245e-assignments-public
+# PUBLIC Assignments for INF8245e
+
+**Students will have access to this repository!**
+
