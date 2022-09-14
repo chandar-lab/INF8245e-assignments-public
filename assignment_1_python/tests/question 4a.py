@@ -1,7 +1,7 @@
 OK_FORMAT = True
 
 test = {   'name': 'question 4a',
-    'points': [1, 9],
+    'points': 10,
     'suites': [   {   'cases': [   {   'code': '>>> np.testing.assert_allclose(\n'
                                                '...     ridge_regression_gradient(\n'
                                                '...         np.asarray([[0.5], [-0.5], [1.4]], dtype=np.float64),\n'
@@ -12,7 +12,8 @@ test = {   'name': 'question 4a',
                                                '...     np.asarray([[1.94454], [0.35895067]], dtype=np.float64)\n'
                                                '>>> )\n',
                                        'hidden': False,
-                                       'locked': False}],
+                                       'locked': False,
+                                       'points': 1}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',
