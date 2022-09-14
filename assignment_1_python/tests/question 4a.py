@@ -9,8 +9,7 @@ test = {   'name': 'question 4a',
                                                '...         np.asarray([[0.8], [-0.12]], dtype=np.float64),\n'
                                                '...         0.99\n'
                                                '...     ),\n'
-                                               '...     np.asarray([[1.94454], [0.35895067]], dtype=np.float64)\n'
-                                               '>>> )\n',
+                                               '...     np.asarray([[1.94454], [0.35895067]], dtype=np.float64))\n',
                                        'hidden': False,
                                        'locked': False,
                                        'points': 1}],
