@@ -1,7 +1,7 @@
 OK_FORMAT = True
 
 test = {   'name': 'question 4b',
-    'points': [2, 18],
+    'points': 20,
     'suites': [   {   'cases': [   {   'code': '>>> _train_loss, _val_loss, _w = ridge_regression_gradient_descent(\n'
                                                '...     np.asarray([[0.5], [-0.5], [1.4]], dtype=np.float64),\n'
                                                '...     np.asarray([[-0.3, 0.1], [0.2, 1.1], [-0.45, -0.77]], dtype=np.float64),\n'
@@ -17,7 +17,8 @@ test = {   'name': 'question 4b',
                                                '>>> np.testing.assert_allclose(_val_loss, np.asarray([0.40028697], dtype=np.float32))\n'
                                                '>>> np.testing.assert_allclose(_w, np.asarray([[0.79999981], [-0.12000004]], dtype=np.float32))\n',
                                        'hidden': False,
-                                       'locked': False}],
+                                       'locked': False,
+                                       'points': 2}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',

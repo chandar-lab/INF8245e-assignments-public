@@ -1,7 +1,7 @@
 OK_FORMAT = True
 
 test = {   'name': 'question 3b',
-    'points': [2, 18],
+    'points': 20,
     'suites': [   {   'cases': [   {   'code': '>>> for split, ((y_train, X_train), (y_valid, X_valid)) in enumerate(cross_validation( \\\n'
                                                '...         np.asarray([[10], [20], [30]]), \\\n'
                                                '...         np.asarray([[11, 12], [21, 22], [31, 32]]), \\\n'
@@ -23,7 +23,8 @@ test = {   'name': 'question 3b',
                                                '...         np.testing.assert_allclose(y_valid, [[20]])\n'
                                                '...         np.testing.assert_allclose(X_valid, [[21, 22]])\n',
                                        'hidden': False,
-                                       'locked': False}],
+                                       'locked': False,
+                                       'points': 2}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',
