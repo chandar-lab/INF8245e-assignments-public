@@ -8,18 +8,7 @@ test = {   'name': 'q3.4',
                                                '>>> np.testing.assert_allclose(negative_log_likelihood(prediction,target), 0.5108256237659906)\n',
                                        'hidden': False,
                                        'locked': False,
-                                       'points': 1.0},
-                                   {   'code': '>>> #HIDDEN\n'
-                                               '>>> \n'
-                                               '>>> prediction = np.array([[0.1,0.2,0.3,0.4], [0.5,0.1,0.1,0.3]])\n'
-                                               '>>> target = np.array([3,0])\n'
-                                               '>>> logs = np.log(0.4) + np.log(0.5)\n'
-                                               '>>> mean = logs/2.0\n'
-                                               '>>> loss = -mean\n'
-                                               '>>> np.testing.assert_allclose(negative_log_likelihood(prediction,target), loss)\n',
-                                       'hidden': True,
-                                       'locked': False,
-                                       'points': 2.0}],
+                                       'points': 1.0}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',
