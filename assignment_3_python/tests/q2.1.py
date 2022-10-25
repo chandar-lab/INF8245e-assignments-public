@@ -11,7 +11,7 @@ test = {   'name': 'q2.1',
                                        'hidden': False,
                                        'locked': False,
                                        'points': 0.0},
-                                   {   'code': '>>> to_test = frequency_bow(np.array(["this is is a randomword"]))\n'
+                                   {   'code': '>>> to_test = frequency_bow(np.array(["this is is a randomword"]), vocab)\n'
                                                '>>> np.testing.assert_allclose(to_test.shape == (1, 1000), 1)\n'
                                                '>>> np.testing.assert_allclose(np.sum(to_test), 1.0)\n'
                                                '>>> to_test_array = np.zeros(len(vocab))\n'
@@ -21,13 +21,13 @@ test = {   'name': 'q2.1',
                                                '>>> np.testing.assert_allclose(to_test[0], to_test_array)\n',
                                        'hidden': False,
                                        'locked': False,
-                                       'points': 0.0},
-                                   {   'code': '>>> to_test = frequency_bow(np.array(["randomword anotherrandomword"]))\n'
+                                       'points': 0.5},
+                                   {   'code': '>>> to_test = frequency_bow(np.array(["randomword anotherrandomword"]), vocab)\n'
                                                '>>> np.testing.assert_allclose(to_test.shape == (1, 1000), 1)\n'
                                                '>>> np.testing.assert_allclose(np.sum(to_test), 0.0)\n',
                                        'hidden': False,
                                        'locked': False,
-                                       'points': 0.0}],
+                                       'points': 0.5}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',
