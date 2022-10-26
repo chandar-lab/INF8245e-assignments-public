@@ -5,7 +5,7 @@ OK_FORMAT = False
 name = "q7.1"
 points = 2
 
-@test_case(points=0.5, hidden=False)
+@test_case(points=2.0, hidden=False)
 def test_q7_1_public_1(f1_train_svm_best_config_bow, f1_val_svm_best_config_bow, f1_test_svm_best_config_bow, best_C, best_max_iter):
     np.testing.assert_allclose(f1_train_svm_best_config_bow >= 0., 1)
     np.testing.assert_allclose(f1_train_svm_best_config_bow <= 1., 1)
