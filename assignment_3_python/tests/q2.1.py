@@ -10,7 +10,7 @@ test = {   'name': 'q2.1',
                                                '>>> np.testing.assert_allclose(frequency_bow_test_data.dtype == float, 1)\n',
                                        'hidden': False,
                                        'locked': False,
-                                       'points': 0.0},
+                                       'points': 0.5},
                                    {   'code': '>>> to_test = frequency_bow(np.array(["this is is a randomword"]), vocab)\n'
                                                '>>> np.testing.assert_allclose(to_test.shape == (1, 1000), 1)\n'
                                                '>>> np.testing.assert_allclose(np.sum(to_test), 1.0)\n'

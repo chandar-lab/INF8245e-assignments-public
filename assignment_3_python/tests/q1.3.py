@@ -10,14 +10,14 @@ test = {   'name': 'q1.3',
                                                '>>> np.testing.assert_allclose(binary_bow_test_data.dtype == int, 1)\n',
                                        'hidden': False,
                                        'locked': False,
-                                       'points': 0.0},
+                                       'points': 0.5},
                                    {   'code': '>>> to_test = binary_bow(np.array(["this is is a randomword"]), vocab)\n'
                                                '>>> np.testing.assert_allclose(to_test.shape == (1, 1000), 1)\n'
                                                '>>> np.testing.assert_allclose(np.unique(to_test), np.unique([0, 1]))\n'
                                                '>>> np.testing.assert_allclose(np.where(to_test[0] == 1), np.array([[3, 6, 10]]))\n',
                                        'hidden': False,
                                        'locked': False,
-                                       'points': 1.0}],
+                                       'points': 0.5}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',
