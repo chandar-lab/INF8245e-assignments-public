@@ -2,7 +2,7 @@ OK_FORMAT = True
 
 test = {   'name': 'q7.1',
     'points': 2,
-    'suites': [   {   'cases': [   {   'code': '>>> def test_q7_1_public_1(f1_train_svm_best_config_bow, f1_val_svm_best_config_bow, f1_test_svm_best_config_bow, best_C, best_max_iter):\n'
+    'suites': [   {   'cases': [   {   'code': '>>> def test_q7_1_public_1(numpy, f1_train_svm_best_config_bow, f1_val_svm_best_config_bow, f1_test_svm_best_config_bow, best_C, best_max_iter):\n'
                                                '...     numpy.testing.assert_allclose(f1_train_svm_best_config_bow >= 0., 1)\n'
                                                '...     numpy.testing.assert_allclose(f1_train_svm_best_config_bow <= 1., 1)\n'
                                                '...     numpy.testing.assert_allclose(f1_val_svm_best_config_bow >= 0., 1)\n'
