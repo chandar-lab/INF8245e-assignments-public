@@ -1,15 +1,12 @@
-OK_FORMAT = True
+from otter.test_files import test_case
 
-test = {   'name': 'q1.2',
-    'points': 2,
-    'suites': [   {   'cases': [   {   'code': '>>> def test_q1_2_public_1(numpy, vocab):\n'
-                                               '...     numpy.testing.assert_allclose(type(vocab) == list, 1)\n'
-                                               '...     numpy.testing.assert_allclose(len(vocab) == 1000, 1)\n'
-                                               '>>> \n',
-                                       'hidden': False,
-                                       'locked': False,
-                                       'points': 0.5}],
-                      'scored': True,
-                      'setup': '',
-                      'teardown': '',
-                      'type': 'doctest'}]}
+OK_FORMAT = False
+
+name = "q1.2"
+points = 2
+
+@test_case(points=0.5, hidden=False)
+def test_q1_2_public_1(numpy, vocab):
+    numpy.testing.assert_allclose(type(vocab) == list, 1)
+    numpy.testing.assert_allclose(len(vocab) == 1000, 1)
+
