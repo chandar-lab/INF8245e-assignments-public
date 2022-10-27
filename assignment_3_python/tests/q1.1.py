@@ -5,13 +5,15 @@ OK_FORMAT = False
 name = "q1.1"
 points = 2
 
-@test_case(points=0.25, hidden=False)
-def test_q1_1_public_1(numpy, pandas, train_data, val_data, test_data):
-    numpy.testing.assert_allclose(isinstance(train_data["reviewText"], pandas.Series), 1)
-    numpy.testing.assert_allclose(isinstance(val_data["reviewText"], pandas.Series), 1)
-    numpy.testing.assert_allclose(isinstance(test_data["reviewText"], pandas.Series), 1)
-
-@test_case(points=0.25, hidden=False)
-def test_q1_1_public_2(numpy, train_data):
-    numpy.testing.assert_allclose("." in train_data["reviewText"][0], 0)
+@test_case(points=0.5, hidden=False)
+def test_q1_1_public_1(numpy, pandas, remove_punctuation):
+    _tmp = remove_punctuation(pandas.Series(data=["This. is a test?!"]))
+    numpy.testing.assert_allclose(isinstance(_tmp, pandas.Series), 1)
+    numpy.testing.assert_allclose(_tmp.tolist() == ["This is a test"], 1)
+    
+@test_case(points=0.5, hidden=False)
+def test_q1_1_public_2(numpy, pandas, set_to_lower_case):
+    _tmp = set_to_lower_case(pandas.Series(data=["This IS a TeST"]))
+    numpy.testing.assert_allclose(isinstance(_tmp, pandas.Series), 1)
+    numpy.testing.assert_allclose(_tmp.tolist() == ["this is a test"], 1)
     
